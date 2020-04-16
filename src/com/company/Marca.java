@@ -2,14 +2,12 @@ package com.company;
 
 public class Marca {
     private String marca;
-    private String nome;
     private int ano;
     private int numeroDeModelos;
     private int codigoIdentificador;
 
 
-    public Marca(String nome, int ano, int numeroDeModelos, int codigoIdentificador, String marca) {
-        this.nome = nome;
+    public Marca(int ano, int numeroDeModelos, int codigoIdentificador, String marca) {
         this.marca = marca;
         this.ano = ano;
         this.numeroDeModelos = numeroDeModelos;
@@ -19,8 +17,7 @@ public class Marca {
     @Override
     public String toString() {
         return
-                "marca='" + marca + '\'' +
-                        ", nome='" + nome + '\'' +
+                marca + '\'' +
                         ", ano=" + ano +
                         ", numeroDeModelos=" + numeroDeModelos +
                         ", codigoIdentificador=" + codigoIdentificador +

@@ -1,12 +1,14 @@
 package com.company;
 
-public class Proprietário {
+public class Proprietario {
+    private Endereco endereco;
     private String nome;
     private String CPF;
     private String RG;
     private String dataNascimento;
 
-    public Proprietário(String nome, String CPF, String RG) {
+    public Proprietario(String nome, String CPF, String RG, Endereco endereco) {
+        this.endereco = endereco;
         this.nome = nome;
         this.CPF = CPF;
         this.RG = RG;
